@@ -47,7 +47,7 @@ extension TeslaCAViewController: ViewCodable {
             .heightTo(50)
             .widthToSuperview(-100)
             .centerHorizontalToSuperView()
-            .topToBottom(of: centralLabel)
+            .bottomToTop(of: centralLabel)
     }
     
     func additionalConfig() {
@@ -55,7 +55,7 @@ extension TeslaCAViewController: ViewCodable {
         centralLabel.textAlignment = .center
         
         switchColorButton.setTitle("Feature Action", for: .normal)
-        switchColorButton.backgroundColor = .systemGreen
+        switchColorButton.backgroundColor = .systemBlue
         switchColorButton.addTarget(self, action: #selector(didTap), for: .touchUpInside)
         
         self.view.backgroundColor = .systemPurple

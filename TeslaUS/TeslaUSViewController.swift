@@ -20,6 +20,7 @@ class TeslaUSViewController: UIViewController, Coordinating {
         
         self.view.addSubviews([centralLabel])
         centralLabel.text = "Hello America!"
+        centralLabel.font = .systemFont(ofSize: 30, weight: .heavy)
         centralLabel.sizeToSuperview()
         centralLabel.textAlignment = .center
         

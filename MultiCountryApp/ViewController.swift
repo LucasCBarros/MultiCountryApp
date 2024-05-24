@@ -12,6 +12,10 @@ class ViewController: UIViewController, Coordinating {
     var centralLabel = UILabel()
     var openFeatureButton = UIButton()
     
+    // TeslaUS Specific
+    var secondFeatureButton = UIButton()
+    var isBackgroundLight = false
+    
     // MARK: - Properties
     var coordinator: Coordinator?
     
@@ -47,7 +51,7 @@ extension ViewController: ViewCodable {
     }
     
     func additionalConfig() {
-        centralLabel.text = "Hello there!"
+        centralLabel.text = "Feature Separation POC"
         
         centralLabel.textAlignment = .center
         
@@ -57,5 +61,29 @@ extension ViewController: ViewCodable {
         
         self.view.backgroundColor = .systemYellow
         title = "Entry Point"
+        
+        setupSecondFeatureButton()
     }
 }
+
+// MARK: - Force requirements for Second Feature Button
+protocol SecondFeatureButtonProtocol {
+    // Add in shared ViewController
+    var secondFeatureButton: UIButton { get set }
+    var isBackgroundLight: Bool { get set }
+    
+    // Add in extension for each target with different behaviour
+    func setupSecondFeatureButton()
+}
+
+// Added in extension of ViewController to keep it clean
+extension ViewController: SecondFeatureButtonProtocol { }
+
+// Otherwise adding multiple features might look like this in the future
+//class ViewController: UIViewController,
+//                      Coordinating,
+//                      FirstFeatureButtonProtocol,
+//                      SecondFeatureButtonProtocol,
+//                      ThirdFeatureButtonProtocol,
+//                      ForthFeatureButtonProtocol,
+//                      FifthFeatureButtonProtocol { }

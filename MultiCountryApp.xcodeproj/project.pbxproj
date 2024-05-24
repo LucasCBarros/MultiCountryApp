@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E61573C02C00FCAE0066115E /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61573BF2C00FCAE0066115E /* ViewController+Extension.swift */; };
+		E61573C22C00FF0D0066115E /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61573C12C00FF0D0066115E /* ViewController+Extension.swift */; };
 		E64439FB2C000A5F00F8FE0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64439FA2C000A5F00F8FE0B /* Assets.xcassets */; };
 		E64439FE2C000A5F00F8FE0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64439FC2C000A5F00F8FE0B /* LaunchScreen.storyboard */; };
 		E6443A032C000A8C00F8FE0B /* TeslaCAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66E72B02C0002A200364055 /* TeslaCAViewController.swift */; };
@@ -41,6 +43,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E61573BF2C00FCAE0066115E /* ViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
+		E61573C12C00FF0D0066115E /* ViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
 		E64439EF2C000A5D00F8FE0B /* TeslaCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeslaCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64439FA2C000A5F00F8FE0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E64439FD2C000A5F00F8FE0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 			children = (
 				E6443A152C00210F00F8FE0B /* Supporting */,
 				E66E72B02C0002A200364055 /* TeslaCAViewController.swift */,
+				E61573C12C00FF0D0066115E /* ViewController+Extension.swift */,
 				E6443A0C2C001C7B00F8FE0B /* Coordinator+CAExtension.swift */,
 				E64439FF2C000A5F00F8FE0B /* Info.plist */,
 			);
@@ -178,6 +183,7 @@
 			children = (
 				E6443A142C00210200F8FE0B /* Supporting */,
 				E66E72B22C0002B500364055 /* TeslaUSViewController.swift */,
+				E61573BF2C00FCAE0066115E /* ViewController+Extension.swift */,
 				E6443A0A2C001C6C00F8FE0B /* Coordinator+USExtension.swift */,
 				E66E72902C0001DB00364055 /* Info.plist */,
 			);
@@ -322,6 +328,7 @@
 				E6443A092C000AAC00F8FE0B /* AppDelegate.swift in Sources */,
 				E6443A052C000AA100F8FE0B /* Coordinator.swift in Sources */,
 				E6443A082C000AA900F8FE0B /* ChainedConstraints.swift in Sources */,
+				E61573C22C00FF0D0066115E /* ViewController+Extension.swift in Sources */,
 				E6443A112C0020C000F8FE0B /* ViewCodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +359,7 @@
 				E66E72B32C0002B600364055 /* TeslaUSViewController.swift in Sources */,
 				E66E72BF2C0009ED00364055 /* Coordinator.swift in Sources */,
 				E6443A0B2C001C6C00F8FE0B /* Coordinator+USExtension.swift in Sources */,
+				E61573C02C00FCAE0066115E /* ViewController+Extension.swift in Sources */,
 				E6443A102C0020C000F8FE0B /* ViewCodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

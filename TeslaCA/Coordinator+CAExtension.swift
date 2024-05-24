@@ -16,7 +16,7 @@ extension Coordinator {
     
     func eventOccurred(with type: Event) {
         switch type {
-        case .buttonTapped:
+        case .openFirstFeature:
             var vc: UIViewController & Coordinating = TeslaCAViewController()
             vc.coordinator = self
             navigationController?.pushViewController(vc, animated: true)
